@@ -1,0 +1,11 @@
+[user]
+	name = Yong Wen Chua
+	email = 
+[colour]
+	ui = true
+[color]
+	ui = auto
+[push]
+	default = simple
+[core]
+	editor = vim

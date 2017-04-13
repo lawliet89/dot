@@ -168,6 +168,9 @@ bindsym $mod+l exec --no-startup-id i3lock
 # Lightdm screws up the screen when it logs in somehow, so we just set some solid color
 exec --no-startup-id xsetroot -solid "#002244"
 
+# Auto lock after 10 mins
+exec --no-startup-id xautolock -time 10 -locker i3lock &
+
 ###########################################################
 # Machine specific settings below
 ###########################################################

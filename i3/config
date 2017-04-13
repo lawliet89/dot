@@ -165,6 +165,9 @@ bar {
 # $mod+SHIFT+L to lock
 bindsym $mod+l exec --no-startup-id i3lock
 
+# Lightdm screws up the screen when it logs in somehow, so we just set some solid color
+exec --no-startup-id xsetroot -solid "#002244"
+
 ###########################################################
 # Machine specific settings below
 ###########################################################

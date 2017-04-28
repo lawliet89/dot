@@ -186,6 +186,9 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Turn screen off after 600s
+exec --no-startup-id xset dpms 0 0 600
+
 ###########################################################
 # Machine specific settings below
 ###########################################################
@@ -194,3 +197,11 @@ assign [class="TelegramDesktop"] → 2
 
 # Start Telegram on Startup
 exec /home/yongwen/Apps/Telegram/Telegram
+
+# Volume icon
+exec --no-startup-id volumeicon
+# Network control
+exec --no-startup-id nm-applet
+
+exec --no-startup-id dropbox start
+

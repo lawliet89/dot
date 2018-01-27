@@ -189,6 +189,10 @@ bindsym XF86AudioPrev exec playerctl previous
 # Turn screen off after 600s
 exec --no-startup-id xset dpms 0 0 600
 
+# To work nicely with gnome settings
+# See https://www.reddit.com/r/i3wm/comments/67caz0/unable_to_start_gnomesettingsdaemon_do_you/
+exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+
 ###########################################################
 # Machine specific settings below
 ###########################################################
@@ -196,7 +200,7 @@ exec --no-startup-id xset dpms 0 0 600
 assign [class="TelegramDesktop"] → 2
 
 # Start Telegram on Startup
-exec /home/yongwen/Apps/Telegram/Telegram
+exec /home/yongwen/apps/Telegram/Telegram
 
 # Volume icon
 exec --no-startup-id volumeicon

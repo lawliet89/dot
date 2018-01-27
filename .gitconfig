@@ -1,11 +1,11 @@
-[user]
-	name = Yong Wen Chua
-	email = 
-[colour]
-	ui = true
-[color]
-	ui = auto
-[push]
-	default = simple
 [core]
 	editor = vim
+	autocrlf = input
+	excludesfile = /home/yongwen/.gitignore_global
+[user]
+	email = lawliet89@noreply.github.com
+	name = Yong Wen Chua
+[push]
+	default = simple
+[commit]
+	gpgsign = false
